@@ -36,7 +36,7 @@ function message(message){
         <button @click="increment(item)">Increment{{item}}</button>
         <button @click="decrement(item)">Decrement{{item}}</button>
       </div>
-  </div>
+    </div>
   </div>
 </template>
 
