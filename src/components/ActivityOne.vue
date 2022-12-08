@@ -6,6 +6,8 @@ import { ref } from "vue";
 // function ✅
 let number = ref(0);
 
+let items = ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10,])
+
 function increment(num) {
   number.value += num;
 }
@@ -26,16 +28,15 @@ function message(message){
     <button @click="increment(1)">Increment</button>
     <button @click="decrement(1)">Decrement</button>
 
-    <button @click="increment(2)">Increment by 2</button>
-    <button @click="decrement(2)">Decrement by 2</button>
-
-    <button @click="increment(3)">Increment by 3</button>
-    <button @click="decrement(3)">Decrement by 3</button>
-
-    <button @click="increment(4)">Increment by 4</button>
-    <button @click="decrement(4)">Decrement by 4</button>
     <button @click="message('ROBERT EDUARD')">Message 1</button>
     <button @click="message('REDSJ')">Message 2</button>
+
+    <div>
+      <ul v-for="item in items" :key="items">
+        <button @click="increment(item)">Increment{{item}}</button>
+        <button @click="decrement(item)">Decrement{{item}}</button>
+      </ul>
+  </div>
   </div>
 </template>
 
