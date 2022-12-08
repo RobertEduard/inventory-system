@@ -32,10 +32,10 @@ function message(message){
     <button @click="message('REDSJ')">Message 2</button>
 
     <div>
-      <ul v-for="item in items" :key="items">
+      <div v-for="item in items" :key="items">
         <button @click="increment(item)">Increment{{item}}</button>
         <button @click="decrement(item)">Decrement{{item}}</button>
-      </ul>
+      </div>
   </div>
   </div>
 </template>
