@@ -34,8 +34,8 @@ function message(message){
 
     <button @click="increment(4)">Increment by 4</button>
     <button @click="decrement(4)">Decrement by 4</button>
-    <button @click="message('ROBERT')">Message 1</button>
-    <button @click="message('EDUARD')">Message 2</button>
+    <button @click="message('ROBERT EDUARD')">Message 1</button>
+    <button @click="message('REDSJ')">Message 2</button>
   </div>
 </template>
 
