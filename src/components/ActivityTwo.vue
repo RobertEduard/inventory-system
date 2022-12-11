@@ -12,6 +12,14 @@ function add() {
 function subtract() {
   result.value = parseInt(number.value) - parseInt(number2.value);
 }
+
+function times() {
+  result.value = parseInt(number.value) * parseInt(number2.value);
+}
+
+function divide() {
+  result.value = parseInt(number.value) / parseInt(number2.value);
+}
 </script>
 
 <template>
@@ -22,6 +30,8 @@ function subtract() {
   <div>
     <button @click="add">+</button>
     <button @click="subtract">-</button>
+    <button @click="times">x</button>
+    <button @click="times">/</button>
   </div>
 
   <div>Total: {{ result }}</div>
