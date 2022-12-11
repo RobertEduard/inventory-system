@@ -33,8 +33,8 @@ function message(message){
 
     <div>
       <div v-for="item in items" :key="items">
-        <button @click="increment(item)">Increment{{item}}</button>
-        <button @click="decrement(item)">Decrement{{item}}</button>
+        <button @click="increment(item)">Incre{{item}}</button>
+        <button @click="decrement(item)">Decre{{item}}</button>
       </div>
     </div>
   </div>
