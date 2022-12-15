@@ -98,9 +98,9 @@ export default {
 
 <style scoped>
 .calculator{
-  min-width: 320px;
+  min-width: 300px;
   font-size: 2rem;
-  width:35%;
+  width:30%;
   height:30rem;
   margin:auto;
   margin-top:2rem;
