@@ -47,7 +47,7 @@ export default {
           console.log(this.input)
           this.output = eval(this.input)
           this.calculated = true
-      }
+      },
   },
   
 }
@@ -64,16 +64,16 @@ export default {
           </div>
       </div>
       <div class="row-1">
-          <div class="button" @click="clear">CE</div>
-          <div class="button" @click="cancel">&larr;</div>
+          <div class="button" @click="clear">AC</div>
+          <div class="button" @click="cancel">del</div>
           <div class="button" @click="enter('%')">%</div>
-          <div class="button" @click="enter('÷')">÷</div>
+          <div class="button" @click="enter('/')">÷</div>
       </div>
       <div class="row-2">
           <div class="button" @click="enter(7)">7</div>
           <div class="button" @click="enter(8)">8</div>
           <div class="button" @click="enter(9)">9</div>
-          <div class="button" @click="enter('*')">*</div>
+          <div class="button" @click="enter('*')">x</div>
       </div>
       <div class="row-3">
           <div class="button" @click="enter(4)">4</div>
@@ -88,7 +88,8 @@ export default {
           <div class="button" @click="enter('+')">+</div>
       </div>
       <div class="row-5">
-          <div class="button" @click="enter(0)">0</div>
+          <div class="button" @click="enter('00')">00</div>
+          <div class="button" @click="enter('0')">0</div>
           <div class="button" @click="enter('.')">.</div>
           <div class="button equal" @click="equal">=</div>
       </div>
@@ -100,11 +101,11 @@ export default {
 .calculator{
   min-width: 300px;
   font-size: 2rem;
-  width:30%;
+  width:20%;
   height:30rem;
   margin:auto;
   margin-top:2rem;
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(0, 0, 0);
   border-radius: 0.5rem;
   -webkit-border-radius: 0.4rem;
@@ -119,13 +120,13 @@ export default {
   align-items: center;
 }
 .display{
-  min-width: 300px;
+  min-width: 100px;
   font-size:1.8rem;
   width:90%;
-  height:6rem;
-  border:1px solid rgb(0, 0, 0);
+  height:8rem;
+  border: 0;
   border-radius: 0.5rem;
-  background-color: rgb(241, 241, 234);
+  background-color: rgb(255, 255, 255);
   margin:1rem auto;
   text-align: right;
 }
@@ -155,7 +156,7 @@ export default {
   text-align: center;
 }
 .button.equal{
-  width:47%;
+  width:20%;
 }
 .button:hover,.button.button.equal:hover{
   color: #000000;
@@ -168,7 +169,7 @@ export default {
   -webkit-transform: translate(0.05rem,0.05rem);
 }
 .input,output{
-  min-width: 280px;
+  min-width: 100px;
   width:100%;
   margin:auto 0;
 }
