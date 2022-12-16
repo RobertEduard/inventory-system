@@ -106,7 +106,7 @@ export default {
   margin:auto;
   margin-top:2rem;
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 0.5rem;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
@@ -143,7 +143,7 @@ export default {
   width:20%;
   height:3rem;
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   -webkit-box-shadow: 0.1rem 0.1rem 0.3rem rgb(0, 0, 0);
   box-shadow: 0.1rem 0.1rem 0.3rem rgb(0, 0, 0);
   transition: all 0.1s;
