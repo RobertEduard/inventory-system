@@ -107,7 +107,7 @@ export default {
   margin-top:2rem;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 0.2rem;
+  border-radius: 50rem;
   -webkit-border-radius: 0.2rem;
   -moz-border-radius: 0.2rem;
   -ms-border-radius: 0.2rem;
