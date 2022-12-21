@@ -65,7 +65,7 @@ export default {
       </div>
       <div class="row-1">
           <div class="button" @click="clear">AC</div>
-          <div class="button" @click="cancel">del</div>
+          <div class="button" @click="invertDisplayValue">+/-</div>
           <div class="button" @click="enter('%')">%</div>
           <div class="button" @click="enter('/')">÷</div>
       </div>
@@ -88,7 +88,7 @@ export default {
           <div class="button" @click="enter('+')">+</div>
       </div>
       <div class="row-5">
-          <div class="button" @click="enter('00')">00</div>
+          <div class="button" @click="cancel">⟲</div>
           <div class="button" @click="enter('0')">0</div>
           <div class="button" @click="enter('.')">.</div>
           <div class="button equal" @click="equal">=</div>
@@ -107,11 +107,11 @@ export default {
   margin-top:2rem;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
   -webkit-box-shadow: 1rem 1rem 0.5rem #000000;
   box-shadow: 0.1rem 0.1rem 0.5rem #000000;
   display: flex;
@@ -125,7 +125,7 @@ export default {
   width:90%;
   height:8rem;
   border: 0;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   background-color: rgb(255, 255, 255);
   margin:1rem auto;
   text-align: right;
@@ -144,8 +144,8 @@ export default {
   height:3rem;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
-  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem rgb(0, 0, 0);
-  box-shadow: 0.1rem 0.1rem 0.3rem rgb(0, 0, 0);
+  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem rgb(255, 234, 234);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgb(255, 255, 255);
   transition: all 0.1s;
   -webkit-transition: all 0.1s;
    -webkit-border-radius: 0.5rem;
@@ -159,9 +159,9 @@ export default {
   width:20%;
 }
 .button:hover,.button.button.equal:hover{
-  color: #000000;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.5rem #000000;
-  box-shadow: 0.3rem 0.3rem 0.5rem #000000;
+  color: #ffd8d8;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.5rem #ffffff;
+  box-shadow: 0.3rem 0.3rem 0.5rem #ffffff;
 }
 .button:active,.button.button.equal:active{
   transform: translate(0.05rem,0.05rem);
